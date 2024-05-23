@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .btn {
+        width: 80%;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        height: 50px;
+        font-size: 1.2rem;
+        background-color: rgb(234, 249, 255);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(216, 244, 255);
+        }
+
+        &:active {
+            background-color: rgb(176, 233, 255);
+        }
+    }
+}
