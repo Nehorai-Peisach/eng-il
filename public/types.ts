@@ -11,5 +11,5 @@ export interface RecordingInterface {
     order?: number,
     name: string,
     title?: string,
-    path: string
+    paths: string[]
 }

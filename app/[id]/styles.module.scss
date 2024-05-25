@@ -4,22 +4,50 @@
     align-items: center;
     gap: 1rem;
 
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
     .btn {
-        width: 80%;
+        padding: .5rem 1rem;
         outline: none;
         border: none;
         border-radius: 1rem;
         height: 50px;
         font-size: 1.2rem;
-        background-color: rgb(234, 249, 255);
         cursor: pointer;
 
-        &:hover {
-            background-color: rgb(216, 244, 255);
+        &:not(.back) {
+            width: 80%;
+
+            background-color: rgb(234, 249, 255);
+
+            &:hover {
+                background-color: rgb(216, 244, 255);
+            }
+
+            &:active {
+                background-color: rgb(176, 233, 255);
+            }
         }
 
-        &:active {
-            background-color: rgb(176, 233, 255);
+        &.back {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: rgb(255, 242, 234);
+
+            &:hover {
+                background-color: rgb(248, 222, 206);
+            }
+
+            &:active {
+                background-color: rgb(253, 219, 198);
+            }
         }
     }
 }

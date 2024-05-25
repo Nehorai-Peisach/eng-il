@@ -13,13 +13,23 @@ export default function Page({ params }: { params: { id: string } }) {
         return <div>{"Sorry, can't find this Book"}</div>;
     }
 
-    const handleRedirect = (recordingId: string) => {
-        router.push(`/${params.id}/${recordingId}`);
+    const handleRedirect = (recordingId: string, isBack: boolean = false) => {
+        let path = `/`;
+
+        if (!isBack)
+            path += `${params.id}/${recordingId}`
+
+        router.push(path);
     };
 
     return (
         <div className={s.container}>
-            <h1>{data.title}</h1>
+            <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
+                {"בחירת ספר"}
+            </button>
+            <div className={s.title}>
+                <h1 className={s.name} dangerouslySetInnerHTML={{ __html: data.title || data.name }}></h1>
+            </div>
             {data.recordings.map((recording) => (
                 <button
                     className={s.btn}

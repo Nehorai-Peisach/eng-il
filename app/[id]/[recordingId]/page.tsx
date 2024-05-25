@@ -39,14 +39,21 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                     {"חזור לתפריט"}
                 </button>
                 <div className={`${s.title} ${s.example}`}>
-                    <h1>{data.title}</h1>
+                    <h1 className={s.name} dangerouslySetInnerHTML={{ __html: recording.title || recording.name }}></h1>
                 </div>
                 <div className={s.recordingContainer}>
-                    <h3 dangerouslySetInnerHTML={{ __html: recording.title || recording.name }}></h3>
-                    <audio ref={audioRef} controls playsInline>
-                        <source src={recording.path} type="audio/mp3" />
-                        Your browser does not support the audio tag.
-                    </audio>
+                    <div className={s.recordings}>
+
+
+                        {
+                            recording.paths.map(path =>
+                                <audio ref={audioRef} controls playsInline>
+                                    <source src={path} type="audio/mp3" />
+                                    Your browser does not support the audio tag.
+                                </audio>
+                            )
+                        }
+                    </div>
                     <div className={s.btns}>
                         {
                             recordingIndex < data.recordings.length - 1 &&

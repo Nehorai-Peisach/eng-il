@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Choose a book</h1>
+      <h1 className={s.title}>{"בחר ספר"}</h1>
       <div className={s.books}>
         {data.map(x =>
           <button key={x.id} className={s.container} onClick={() => handleRedirect(x.id)}>
