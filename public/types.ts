@@ -1,7 +1,9 @@
 export interface BookInterface {
     id: string,
-    title: string,
-    recordings: RecordingInterface[]
+    name: string,
+    title?: string,
+    recordings: RecordingInterface[],
+    imgPath: string
 }
 
 export interface RecordingInterface {

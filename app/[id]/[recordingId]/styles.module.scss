@@ -3,12 +3,14 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    height: 100dvh;
+
 
     .title {
         display: flex;
         align-items: center;
         gap: 2rem;
-
+        margin-top: 4rem;
     }
 
     .example {}
@@ -17,6 +19,9 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        height: 100%;
+        padding: 1rem;
+        justify-content: space-between;
 
         .btns {
             display: flex;
@@ -50,6 +55,9 @@
         }
 
         &.back {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
             background-color: rgb(255, 242, 234);
 
             &:hover {

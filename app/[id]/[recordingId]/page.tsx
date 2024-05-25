@@ -7,13 +7,13 @@ import { useEffect, useRef } from "react";
 
 export default function Page({ params }: { params: { id: string, recordingId: string } }) {
     const router = useRouter();
-    // const videoRef = useRef<any>(null);
+    const audioRef = useRef<any>(null);
 
-    // useEffect(() => {
-    //     if (videoRef.current) {
-    //         videoRef.current.playbackRate = .75;
-    //     }
-    // }, []);
+    useEffect(() => {
+        if (audioRef.current) {
+            audioRef.current.playbackRate = .75;
+        }
+    }, []);
 
 
     const data = projectsData.find(x => x.id === params.id);
@@ -35,15 +35,15 @@ export default function Page({ params }: { params: { id: string, recordingId: st
 
 
             return <div className={s.container}>
+                <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
+                    {"חזור לתפריט"}
+                </button>
                 <div className={`${s.title} ${s.example}`}>
-                    <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                        {"חזור לתפריט"}
-                    </button>
                     <h1>{data.title}</h1>
                 </div>
                 <div className={s.recordingContainer}>
                     <h3 dangerouslySetInnerHTML={{ __html: recording.title || recording.name }}></h3>
-                    <audio controls>
+                    <audio ref={audioRef} controls playsInline>
                         <source src={recording.path} type="audio/mp3" />
                         Your browser does not support the audio tag.
                     </audio>
