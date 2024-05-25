@@ -7,13 +7,13 @@ import { useEffect, useRef } from "react";
 
 export default function Page({ params }: { params: { id: string, recordingId: string } }) {
     const router = useRouter();
-    const videoRef = useRef<any>(null);
+    // const videoRef = useRef<any>(null);
 
-    useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.playbackRate = .75;
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (videoRef.current) {
+    //         videoRef.current.playbackRate = .75;
+    //     }
+    // }, []);
 
 
     const data = projectsData.find(x => x.id === params.id);
@@ -42,11 +42,11 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                     <h1>{data.title}</h1>
                 </div>
                 <div className={s.recordingContainer}>
-                    <h3>{recording.name}</h3>
-                    <video ref={videoRef} width={450} height={50} controls>
-                        <source src={recording.path} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <h3 dangerouslySetInnerHTML={{ __html: recording.title || recording.name }}></h3>
+                    <audio controls>
+                        <source src={recording.path} type="audio/mp3" />
+                        Your browser does not support the audio tag.
+                    </audio>
                     <div className={s.btns}>
                         {
                             recordingIndex < data.recordings.length - 1 &&

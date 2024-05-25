@@ -8,5 +8,6 @@ export interface RecordingInterface {
     id: string
     order?: number,
     name: string,
+    title?: string,
     path: string
 }

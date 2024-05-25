@@ -13,7 +13,8 @@ export const projectsData: BookInterface[] = [
             }, {
                 id: "2",
                 order: 2,
-                name: "Scoters 2",
+                name: "A1",
+                title: "הקדמה -1<br/>A Question <br/>and An Answer",
                 path: "/recordings/1.mp3"
             }, {
                 id: "3",
