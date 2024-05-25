@@ -46,8 +46,8 @@ export default function Page({ params }: { params: { id: string, recordingId: st
 
 
                         {
-                            recording.paths.map(path =>
-                                <audio ref={audioRef} controls playsInline>
+                            recording.paths.map((path, i) =>
+                                <audio key={i} ref={audioRef} controls playsInline>
                                     <source src={path} type="audio/mp3" />
                                     Your browser does not support the audio tag.
                                 </audio>
