@@ -16,7 +16,7 @@ export default function Home() {
       <h1>Choose a book</h1>
       <div className={s.books}>
         {data.map(x =>
-          <button className={s.container} onClick={() => handleRedirect(x.id)}>
+          <button key={x.id} className={s.container} onClick={() => handleRedirect(x.id)}>
             <strong>
               {x.name}
             </strong>
