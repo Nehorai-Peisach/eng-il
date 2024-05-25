@@ -3,19 +3,9 @@
 import { projectsData } from "@/public/data";
 import s from './styles.module.scss';
 import { useRouter } from 'next/navigation';
-import { useEffect, useRef } from "react";
 
 export default function Page({ params }: { params: { id: string, recordingId: string } }) {
     const router = useRouter();
-    const audioRef = useRef<any>(null);
-
-    useEffect(() => {
-        if (audioRef.current) {
-            audioRef.current.playbackRate = .75;
-        }
-    }, []);
-
-
     const data = projectsData.find(x => x.id === params.id);
 
     const handleRedirect = (recordingId: string, isBack: boolean = false) => {
@@ -43,17 +33,16 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                 </div>
                 <div className={s.recordingContainer}>
                     <div className={s.recordings}>
-
-
                         {
                             recording.paths.map((path, i) =>
-                                <audio key={i} ref={audioRef} controls playsInline>
+                                <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
                                     <source src={path} type="audio/mp3" />
                                     Your browser does not support the audio tag.
                                 </audio>
                             )
                         }
                     </div>
+
                     <div className={s.btns}>
                         {
                             recordingIndex < data.recordings.length - 1 &&
