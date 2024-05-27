@@ -46,7 +46,7 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                     <div className={s.recordings}>
                         {
                             recording.recordings.map((r, i) =>
-                                <div className={s.recording}>
+                                <div key={i} className={s.recording}>
                                     {r.title && <span>{r.title}</span>}
                                     <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
                                         <source src={r.path} type="audio/mp3" />
