@@ -25,9 +25,14 @@ export default function Page({ params }: { params: { id: string, recordingId: st
 
 
             return <div className={s.container}>
-                <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                    {"חזור לתפריט"}
-                </button>
+                <div className={s.topBtns}>
+                    <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
+                        {"חזור לתפריט"}
+                    </button>
+                    <button className={`${s.btn} ${s.info}`} onClick={() => router.push("/explanation")}>
+                        {"למדריך"}
+                    </button>
+                </div>
                 <div className={s.title}>
                     <div className={s.name}>
                         <h1>

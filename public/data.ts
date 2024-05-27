@@ -1,4 +1,16 @@
-import { BookInterface } from "./types";
+import { BookInterface, ExplanationInterface } from "./types";
+
+export const explanationsData: ExplanationInterface[] = [
+    {
+        title: "קריאה",
+        imgPath: "/explanations/1.png",
+        text: "קראו את הספר קודם"
+    }, {
+        title: "שמיעה",
+        imgPath: "/explanations/2.png",
+        text: "לאחר מכן שמעו את ההקלטות"
+    }
+]
 
 export const projectsData: BookInterface[] = [
     {
@@ -10,7 +22,6 @@ export const projectsData: BookInterface[] = [
         recordings: [
             {
                 id: "1",
-                order: 1,
                 name: "A1",
                 title: "Teranovas 1",
                 subtitle: "Teranovas asdf asdsda asd asdasd a asdasd as 1",
@@ -18,13 +29,11 @@ export const projectsData: BookInterface[] = [
             },
             {
                 id: "2",
-                order: 3,
                 name: "Teranovas 2",
                 recordings: [{ path: "/recordings/1.mp3", title: "Last part:" }, { path: "/recordings/1.mp3" }]
             },
             {
                 id: "3",
-                order: 2,
                 name: "Teranovas 3",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
             }
@@ -38,13 +47,11 @@ export const projectsData: BookInterface[] = [
         recordings: [
             {
                 id: "1",
-                order: 1,
                 name: "Stars 1",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
             },
             {
                 id: "2",
-                order: 2,
                 name: "Stars 2",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
             }
@@ -58,28 +65,24 @@ export const projectsData: BookInterface[] = [
         recordings: [
             {
                 id: "1",
-                order: 1,
                 name: "Enchanted Places 1",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "2",
-                order: 2,
                 name: "Enchanted Places 2",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "3",
-                order: 3,
                 name: "Enchanted Places 3",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "4",
-                order: 4,
                 name: "Enchanted Places 4",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
@@ -94,21 +97,18 @@ export const projectsData: BookInterface[] = [
         recordings: [
             {
                 id: "1",
-                order: 1,
                 name: "Revolution 1",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "2",
-                order: 2,
                 name: "Revolution 2",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "3",
-                order: 3,
                 name: "Revolution 3",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
@@ -123,28 +123,24 @@ export const projectsData: BookInterface[] = [
         recordings: [
             {
                 id: "1",
-                order: 1,
                 name: "Future 1",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "2",
-                order: 2,
                 name: "Future 2",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "3",
-                order: 3,
                 name: "Future 3",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
             },
             {
                 id: "4",
-                order: 4,
                 name: "Future 4",
                 recordings: [{ path: "/recordings/1.mp3", title: "Part one:" }, { path: "/recordings/1.mp3", title: "Part two:" }]
 
@@ -152,6 +148,3 @@ export const projectsData: BookInterface[] = [
         ]
     }
 ];
-
-
-

@@ -1,3 +1,9 @@
+export interface ExplanationInterface {
+    title?: string,
+    imgPath: string,
+    text: string
+}
+
 export interface BookInterface {
     id: string,
     name: string,
@@ -9,7 +15,6 @@ export interface BookInterface {
 
 export interface RecordingInterface {
     id: string
-    order?: number,
     name: string,
     title?: string,
     subtitle?: string,

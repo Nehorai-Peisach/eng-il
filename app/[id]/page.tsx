@@ -24,9 +24,14 @@ export default function Page({ params }: { params: { id: string } }) {
 
     return (
         <div className={s.container}>
-            <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                {"לשינוי ספר | " + data.name}
-            </button>
+            <div className={s.topBtns}>
+                <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
+                    {"לשינוי ספר | " + data.name}
+                </button>
+                <button className={`${s.btn} ${s.info}`} onClick={() => router.push("/explanation")}>
+                    {"למדריך"}
+                </button>
+            </div>
             <div className={s.title}>
                 <h1 className={s.name} dangerouslySetInnerHTML={{ __html: data.title || data.name }}></h1>
                 {data.subtitle && <h3 className={s.name} dangerouslySetInnerHTML={{ __html: data.subtitle }}></h3>}

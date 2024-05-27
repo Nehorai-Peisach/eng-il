@@ -1,0 +1,39 @@
+.container {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    .backBtn {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all .2s;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(120deg, #FA837F, #FF5C72);
+    }
+
+    .explanation {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: calc(100% - 2rem);
+        }
+    }
+}
