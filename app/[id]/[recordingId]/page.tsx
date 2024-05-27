@@ -40,11 +40,14 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                 <div className={s.recordingContainer}>
                     <div className={s.recordings}>
                         {
-                            recording.paths.map((path, i) =>
-                                <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
-                                    <source src={path} type="audio/mp3" />
-                                    Your browser does not support the audio tag.
-                                </audio>
+                            recording.recordings.map((r, i) =>
+                                <div className={s.recording}>
+                                    {r.title && <span>{r.title}</span>}
+                                    <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
+                                        <source src={r.path} type="audio/mp3" />
+                                        Your browser does not support the audio tag.
+                                    </audio>
+                                </div>
                             )
                         }
                     </div>

@@ -13,5 +13,5 @@ export interface RecordingInterface {
     name: string,
     title?: string,
     subtitle?: string,
-    paths: string[]
+    recordings: { path: string, title?: string }[]
 }
