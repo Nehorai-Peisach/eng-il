@@ -25,10 +25,11 @@ export default function Page({ params }: { params: { id: string } }) {
     return (
         <div className={s.container}>
             <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                {"בחירת ספר"}
+                {"לשינוי ספר | " + data.name}
             </button>
             <div className={s.title}>
                 <h1 className={s.name} dangerouslySetInnerHTML={{ __html: data.title || data.name }}></h1>
+                {data.subtitle && <h3 className={s.name} dangerouslySetInnerHTML={{ __html: data.subtitle }}></h3>}
             </div>
             {data.recordings.map((recording) => (
                 <button
@@ -36,7 +37,17 @@ export default function Page({ params }: { params: { id: string } }) {
                     key={recording.id}
                     onClick={() => handleRedirect(recording.id)}
                 >
-                    {recording.name}
+                    <div className={s.rname}>
+                        <h2>{recording.name}</h2>
+                    </div>
+                    {
+                        (recording.title || recording.subtitle) &&
+                        <div className={s.description}>
+
+                            {recording.title && <span className={s.rtitle}>{recording.title}</span>}
+                            {recording.subtitle && <span className={s.rsubtitle}>{recording.subtitle}</span>}
+                        </div>
+                    }
                 </button>
             ))}
         </div>

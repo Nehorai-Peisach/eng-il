@@ -5,23 +5,26 @@ export const projectsData: BookInterface[] = [
         id: "Book-A",
         name: "Book A",
         title: "This is a book about Teranovas",
+        subtitle: "This is a book about Teranovas",
         imgPath: "/books/A.jpg",
         recordings: [
             {
                 id: "1",
                 order: 1,
-                name: "Teranovas 1",
+                name: "A1",
+                title: "Teranovas 1",
+                subtitle: "Teranovas asdf asdsda asd asdasd a asdasd as 1",
                 paths: ["/recordings/1.mp3", "/recordings/1.mp3"]
             },
             {
                 id: "2",
-                order: 2,
+                order: 3,
                 name: "Teranovas 2",
                 paths: ["/recordings/1.mp3", "/recordings/1.mp3"]
             },
             {
                 id: "3",
-                order: 3,
+                order: 2,
                 name: "Teranovas 3",
                 paths: ["/recordings/1.mp3", "/recordings/1.mp3"]
             }

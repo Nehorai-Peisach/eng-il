@@ -28,8 +28,14 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                 <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
                     {"חזור לתפריט"}
                 </button>
-                <div className={`${s.title} ${s.example}`}>
-                    <h1 className={s.name} dangerouslySetInnerHTML={{ __html: recording.title || recording.name }}></h1>
+                <div className={s.title}>
+                    <div className={s.name}>
+                        <h1>
+                            {recording.name}
+                        </h1>
+                    </div>
+                    {recording.title && <h1 dangerouslySetInnerHTML={{ __html: recording.title }}></h1>}
+                    {recording.subtitle && <h3 dangerouslySetInnerHTML={{ __html: recording.subtitle }}></h3>}
                 </div>
                 <div className={s.recordingContainer}>
                     <div className={s.recordings}>

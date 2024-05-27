@@ -1,24 +1,25 @@
 .title {
     text-align: center;
+    margin: 3rem;
 }
 
 .books {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
 
     .container {
         border: none;
-        padding: 1rem 2rem;
-        background-color: white;
-        border-radius: 1rem;
+        padding: 1rem 0 0 0;
+        background: linear-gradient(120deg, #2E6ADC, #4AEF90);
+        border-radius: 1.5rem;
         min-height: 200px;
         min-width: 190px;
         cursor: pointer;
-        transition: all .3s;
-        box-shadow: 0px 0px 10px gray;
+        transition: all .2s;
 
         display: flex;
         flex-direction: column;
@@ -27,18 +28,24 @@
         gap: 1rem;
 
         &:hover {
-            box-shadow: 0px 0px 10px rgb(169, 169, 201);
+            box-shadow: 0 0 2rem #4aef8f62;
             scale: 1.05;
 
             &:active {
-                background-color: rgb(208, 223, 255);
+                scale: .95;
+                box-shadow: 0 0 0 #4aef8f62;
             }
+        }
+
+        .name {
+            font-size: 1.2rem;
+            font-weight: bold;
         }
 
         .img {
             width: 190px;
             height: 190px;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
             pointer-events: none;
             user-select: none;
         }

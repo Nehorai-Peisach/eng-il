@@ -17,9 +17,9 @@ export default function Home() {
       <div className={s.books}>
         {data.map(x =>
           <button key={x.id} className={s.container} onClick={() => handleRedirect(x.id)}>
-            <strong>
+            <span className={s.name}>
               {x.name}
-            </strong>
+            </span>
             <img className={s.img} src={x.imgPath} alt="book" />
           </button>
         )}

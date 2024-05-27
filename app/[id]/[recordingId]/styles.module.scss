@@ -7,22 +7,34 @@
 
     .title {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        margin-top: 5rem;
+        justify-content: center;
         text-align: center;
-    }
+        margin-top: 5rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
 
-    .name {
-        margin: 0;
-        color: rgb(111, 111, 199);
+        h1,
+        h3 {
+            margin: 0;
+        }
+
+        .name {
+            background: linear-gradient(160deg, #2E6ADC, #4AEF90);
+            padding: 1rem;
+            border-radius: 1.5rem;
+
+            h1 {
+                margin: 0;
+            }
+        }
     }
 
     .recordingContainer {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        height: 100%;
         padding: 1rem;
         justify-content: space-between;
 
@@ -42,25 +54,63 @@
 
 
     .btn {
-        padding: .5rem 1rem;
+        padding: 1rem;
         outline: none;
         border: none;
-        border-radius: 1rem;
-        height: 50px;
+        border-radius: 1.5rem;
         font-size: 1.2rem;
         cursor: pointer;
+        transition: all .2s;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .rname {
+            background-color: white;
+            box-shadow: 0 0 30px #bcfad6;
+            border-radius: 1.5rem;
+            padding: 1rem;
+
+            h2 {
+                margin: 0;
+
+                background: #2E6ADC;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 1.5rem;
+            margin-top: 1rem;
+
+            .rtitle {}
+
+            .rsubtitle {}
+
+        }
 
         &:not(.back) {
             width: 80%;
 
-            background-color: rgb(234, 249, 255);
+            background: linear-gradient(160deg, #2E6ADC, #4AEF90);
 
             &:hover {
-                background-color: rgb(216, 244, 255);
-            }
+                box-shadow: 0 0 2rem #4aef8f62;
+                scale: 1.05;
 
-            &:active {
-                background-color: rgb(176, 233, 255);
+                &:active {
+                    scale: .95;
+                    box-shadow: 0 0 0 #4aef8f62;
+                }
             }
         }
 
@@ -68,7 +118,7 @@
             position: absolute;
             top: 1rem;
             left: 1rem;
-            background-color: rgb(255, 242, 234);
+            background: linear-gradient(120deg, #FA837F, #FF5C72);
 
             &:hover {
                 background-color: rgb(248, 222, 206);
