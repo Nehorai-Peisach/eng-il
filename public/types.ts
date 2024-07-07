@@ -18,5 +18,10 @@ export interface RecordingInterface {
     name: string,
     title?: string,
     subtitle?: string,
-    recordings: { path: string, title?: string }[]
+    recordings: Recording[]
+}
+
+export interface Recording {
+    path: string;
+    title?: string;
 }

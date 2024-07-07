@@ -3,6 +3,7 @@
 import { projectsData } from "@/public/data";
 import s from './styles.module.scss';
 import { useRouter } from 'next/navigation';
+import AudioWavesurfer from "@/components/wavesurfer/wavesurfer";
 
 export default function Page({ params }: { params: { id: string, recordingId: string } }) {
     const router = useRouter();
@@ -46,13 +47,14 @@ export default function Page({ params }: { params: { id: string, recordingId: st
                     <div className={s.recordings}>
                         {
                             recording.recordings.map((r, i) =>
-                                <div key={i} className={s.recording}>
-                                    {r.title && <span>{r.title}</span>}
-                                    <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
-                                        <source src={r.path} type="audio/mp3" />
-                                        Your browser does not support the audio tag.
-                                    </audio>
-                                </div>
+                                // <div key={i} className={s.recording}>
+                                //     {r.title && <span>{r.title}</span>}
+                                //     <audio key={i} controls playsInline onPlay={(e: any) => e.target.playbackRate = 0.75}>
+                                //         <source src={r.path} type="audio/mp3" />
+                                //         Your browser does not support the audio tag.
+                                //     </audio>
+                                // </div>
+                                <AudioWavesurfer key={i} recording={r} />
                             )
                         }
                     </div>
