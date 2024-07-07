@@ -11,13 +11,18 @@
     .title {
         width: 100%;
         text-align: center;
+        margin: 0;
     }
 
     .timesContainer {
-        width: calc(100% - 55px);
         display: flex;
-        justify-content: space-between;
-        padding-left: 55px;
+
+        .rateContainer {
+            display: flex;
+            min-width: 45px;
+            margin-right: 10px;
+            justify-content: center;
+        }
 
         .last {
             margin-left: auto;
@@ -27,7 +32,7 @@
     .waveContainer {
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: end;
         gap: 15px;
 
         .btn {
@@ -67,41 +72,17 @@
         }
     }
 
-    .optionsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 10px;
-        width: 100%;
+    .rateButton {
+        background-color: #52dcff;
+        outline: none;
+        border: none;
+        color: #182B32;
+        height: 20px;
+        border-radius: 9999px;
+        cursor: pointer;
 
-        .volumeControl {
-            display: flex;
-            align-items: center;
-
-            input[type="range"] {
-                width: 100px;
-                margin: 0 10px;
-                height: 3px;
-                outline: none;
-                opacity: 0.7;
-                transition: opacity 0.2s;
-                border-radius: 5px;
-                accent-color: #52dcff;
-            }
-        }
-
-        .rateButton {
-            background-color: #52dcff;
-            outline: none;
-            border: none;
-            color: #182B32;
-            height: 20px;
-            border-radius: 9999px;
-            cursor: pointer;
-
-            &:hover {
-                color: white;
-            }
+        &:hover {
+            color: white;
         }
     }
 }
