@@ -36,8 +36,7 @@ export default function AudioWavesurfer({ recording }: { recording: Recording })
                 barGap: 1,
                 barRadius: 20,
                 barWidth: 5,
-                audioRate: audioRate,
-                backend: "WebAudio"
+                audioRate: audioRate
             });
 
             wavesurferRef.current?.setVolume(0.1);
