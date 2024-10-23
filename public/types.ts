@@ -19,4 +19,7 @@ export interface RecordingInterface {
     title?: string,
     subtitle?: string,
     recordings: { path: string, title?: string }[]
+    downloadPath?: string
 }
+
+export interface Recording { path: string, title?: string }

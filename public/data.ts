@@ -22,44 +22,46 @@ export const projectsData: BookInterface[] = [
                 name: "מבוא",
                 title: "A Question and An Answer",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a0n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a0-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a0-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a0-2.mp3", title: "משפט שני" }]
+                recordings: [{ path: "/recordings/A1/a0n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a0-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a0-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a0-2.mp3", title: "משפט שני" }],
+                downloadPath: "/files/sample.pdf"
             },
             {
                 id: "1",
                 name: "A1",
                 title: "Scooters",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a1n.mp3", title: "השמעה רציפה" },{ path: "/recordings/A1/a1-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a1-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a1-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a1-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a1n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a1-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a1-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a1-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a1-3.mp3", title: "משפט שלישי" }],
+                downloadPath: "https://pdfobject.com/pdf/sample.pdf"
             },
             {
                 id: "2",
                 name: "A2",
                 title: "More Sea and Less Land",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a2n.mp3", title: "השמעה רציפה" },{ path: "/recordings/A1/a2-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a2-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a2-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a2-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a2n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a2-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a2-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a2-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a2-3.mp3", title: "משפט שלישי" }]
             },
             {
                 id: "3",
                 name: "A3",
                 title: "Do You Use Your Computer to Buy Online?",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a3n.mp3", title: "השמעה רציפה" },{ path: "/recordings/A1/a3-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a3-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a3-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a3-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a3n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a3-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a3-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a3-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a3-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "4",
                 name: "A4",
                 title: "Winston Churchill",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a4n.mp3", title: "השמעה רציפה" },{ path: "/recordings/A1/a4-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a4-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a4-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a4-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a4n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a4-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a4-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a4-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a4-3.mp3", title: "משפט שלישי" }]
             },
             {
                 id: "5",
                 name: "A5",
                 title: "Let’s Learn For More Than Eight Seconds",
                 subtitle: "",
-                recordings: [{path: "/recordings/A1/a5n.mp3", title: "השמעה רציפה" },{ path: "/recordings/A1/a5-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a5-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a5-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a5-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a5n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a5-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a5-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a5-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a5-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "6",
                 name: "A6",
                 title: "Clothes are Cheap",
@@ -73,7 +75,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/A1/a7n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a7-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a7-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a7-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a7-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "8",
                 name: "A8",
                 title: "Animals Care for Themselves",
@@ -94,7 +96,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/A1/a10n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a10-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a10-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a10-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a10-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "11",
                 name: "A11",
                 title: "Fred Nock",
@@ -106,9 +108,9 @@ export const projectsData: BookInterface[] = [
                 name: "A12",
                 title: "Weather Forecasts",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a12n.mp3", title: "השמעה רציפה" },  { path: "/recordings/A1/a12-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a12-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a12-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a12-3.mp3", title: "משפט שלישי" }]
+                recordings: [{ path: "/recordings/A1/a12n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a12-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a12-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a12-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a12-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "13",
                 name: "A13",
                 title: "Teens and the News: Survey Results",
@@ -122,7 +124,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/A1/a14n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a14-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a14-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a14-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a14-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "15",
                 name: "A15",
                 title: "Plastic - Part I",
@@ -143,7 +145,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/A1/a17n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a17-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a17-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a17-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a17-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "18",
                 name: "A18",
                 title: "Driver Reaction Time",
@@ -157,7 +159,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/A1/a19n.mp3", title: "השמעה רציפה" }, { path: "/recordings/A1/a19-0.mp3", title: "כותרת" }, { path: "/recordings/A1/a19-1.mp3", title: "משפט ראשון" }, { path: "/recordings/A1/a19-2.mp3", title: "משפט שני" }, { path: "/recordings/A1/a19-3.mp3", title: "משפט שלישי" }]
             },
-                        {
+            {
                 id: "20",
                 name: "A20",
                 title: "Physical Activity",
@@ -169,11 +171,11 @@ export const projectsData: BookInterface[] = [
                 name: "AC",
                 title: "Conversation",
                 subtitle: "",
-                recordings: [{ path: "/recordings/A1/a-conversation.mp3", title: "השמעה רציפה"}]
+                recordings: [{ path: "/recordings/A1/a-conversation.mp3", title: "השמעה רציפה" }]
             }
         ]
     },
-        {
+    {
         id: "Book-B1",
         name: "Book B1 - B20",
         title: "",
@@ -185,28 +187,28 @@ export const projectsData: BookInterface[] = [
                 name: "B1",
                 title: "Electric Scooters",
                 subtitle: "",
-                recordings: [{ path: "/recordings/B1/b1n.mp3", title: "השמעה רציפה" },{ path: "/recordings/B1/b1-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b1-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b1-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b1-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b1-4.mp3", title: "משפט רביעי" }]
+                recordings: [{ path: "/recordings/B1/b1n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b1-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b1-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b1-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b1-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b1-4.mp3", title: "משפט רביעי" }]
             },
             {
                 id: "2",
                 name: "B2",
                 title: "Kiribati",
                 subtitle: "",
-                recordings: [{ path: "/recordings/B1/b2n.mp3", title: "השמעה רציפה" },{ path: "/recordings/B1/b2-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b2-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b2-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b2-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b2-4.mp3", title: "משפט רביעי" }]
+                recordings: [{ path: "/recordings/B1/b2n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b2-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b2-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b2-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b2-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b2-4.mp3", title: "משפט רביעי" }]
             },
             {
                 id: "3",
                 name: "B3",
                 title: "Online Shopping",
                 subtitle: "",
-                recordings: [{ path: "/recordings/B1/b3n.mp3", title: "השמעה רציפה" },{ path: "/recordings/B1/b3-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b3-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b3-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b3-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b3-4.mp3", title: "משפט רביעי" }]
+                recordings: [{ path: "/recordings/B1/b3n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b3-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b3-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b3-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b3-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b3-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "4",
                 name: "B4",
                 title: "Winston Churchill",
                 subtitle: "",
-                recordings: [{ path: "/recordings/B1/b4n.mp3", title: "השמעה רציפה" },{ path: "/recordings/B1/b4-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b4-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b4-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b4-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b4-4.mp3", title: "משפט רביעי" }]
+                recordings: [{ path: "/recordings/B1/b4n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b4-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b4-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b4-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b4-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b4-4.mp3", title: "משפט רביעי" }]
             },
             {
                 id: "5",
@@ -215,7 +217,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b5n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b5-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b5-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b5-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b5-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b5-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "6",
                 name: "B6",
                 title: "Cheap Clothing  –Part 1",
@@ -229,7 +231,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b7n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b7-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b7-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b7-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b7-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b7-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "8",
                 name: "B8",
                 title: "Copying to Stay Alive",
@@ -250,7 +252,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b10n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b10-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b10-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b10-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b10-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b10-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "11",
                 name: "B11",
                 title: "Fred Nock",
@@ -262,9 +264,9 @@ export const projectsData: BookInterface[] = [
                 name: "A12",
                 title: "Weather Forecasts",
                 subtitle: "",
-                recordings: [{ path: "/recordings/B1/b12n.mp3", title: "השמעה רציפה" },  { path: "/recordings/B1/b12-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b12-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b12-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b12-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b12-4.mp3", title: "משפט רביעי" }]
+                recordings: [{ path: "/recordings/B1/b12n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b12-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b12-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b12-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b12-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b12-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "13",
                 name: "B13",
                 title: "News and Teens",
@@ -278,7 +280,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b14n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b14-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b14-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b14-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b14-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b14-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "15",
                 name: "B15",
                 title: "Plastic - Part I",
@@ -299,7 +301,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b17n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b17-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b17-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b17-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b17-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b17-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "18",
                 name: "B18",
                 title: "Driver Reaction Time",
@@ -313,7 +315,7 @@ export const projectsData: BookInterface[] = [
                 subtitle: "",
                 recordings: [{ path: "/recordings/B1/b19n.mp3", title: "השמעה רציפה" }, { path: "/recordings/B1/b19-0.mp3", title: "כותרת" }, { path: "/recordings/B1/b19-1.mp3", title: "משפט ראשון" }, { path: "/recordings/B1/b19-2.mp3", title: "משפט שני" }, { path: "/recordings/B1/b19-3.mp3", title: "משפט שלישי" }, { path: "/recordings/B1/b19-4.mp3", title: "משפט רביעי" }]
             },
-                        {
+            {
                 id: "20",
                 name: "B20",
                 title: "Physical Activity",

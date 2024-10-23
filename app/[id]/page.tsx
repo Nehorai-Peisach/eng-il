@@ -26,10 +26,7 @@ export default function Page({ params }: { params: { id: string } }) {
         <div className={s.container}>
             <div className={s.topBtns}>
                 <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                    {"לשינוי ספר | " + data.name}
-                </button>
-                <button className={`${s.btn} ${s.info}`} onClick={() => router.push("/explanation")}>
-                    {"למדריך"}
+                    {"לכל הספרים"}
                 </button>
             </div>
             <div className={s.title}>

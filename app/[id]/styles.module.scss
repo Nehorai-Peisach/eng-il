@@ -26,10 +26,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 1rem;
+        padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 2rem);
+        width: calc(100% - 4rem);
     }
 
     .btn {
@@ -77,7 +77,7 @@
 
         }
 
-        &:not(.back):not(.info) {
+        &:not(.back) {
             width: 80%;
 
             background: linear-gradient(160deg, #2E6ADC, #4AEF90);
@@ -94,11 +94,7 @@
         }
 
         &.back {
-            background: linear-gradient(120deg, #FA837F, #FF5C72);
-        }
-
-        &.info {
-            background: linear-gradient(120deg, #8e8e8e, #36293b);
+            background: linear-gradient(120deg, #ffaaa7, #FF5C72);
         }
     }
 }

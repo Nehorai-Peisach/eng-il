@@ -28,11 +28,19 @@ export default function Page({ params }: { params: { id: string, recordingId: st
             return <div className={s.container}>
                 <div className={s.topBtns}>
                     <button className={`${s.btn} ${s.back}`} onClick={() => handleRedirect("", true)}>
-                        {"חזור לתפריט"}
+                        {"לכל הפרקים"}
                     </button>
-                    <button className={`${s.btn} ${s.info}`} onClick={() => router.push("/explanation")}>
-                        {"למדריך"}
-                    </button>
+                    {recording.downloadPath && (
+                        <a
+                            href={recording.downloadPath}
+                            download={recording.downloadPath.split('/').pop()}
+                            className={`${s.btn} ${s.file}`}
+                        >
+                            {"הורדת תרגול"}
+                        </a>
+                    )}
+
+
                 </div>
                 <div className={s.title}>
                     <div className={s.name}>
