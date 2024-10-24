@@ -1,12 +1,9 @@
 html {
-    height: 100vh;
+    min-height: 100dvh;
     background: linear-gradient(120deg, #021f25, #28343b);
-    overflow: hidden;
 }
 
 body {
-    height: 100vh;
-    overflow: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
