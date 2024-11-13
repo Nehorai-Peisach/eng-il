@@ -39,7 +39,7 @@ export default function AudioWavesurfer({ recording }: { recording: Recording })
                 audioRate: audioRate
             });
 
-            wavesurferRef.current?.setVolume(0.1);
+            wavesurferRef.current?.setVolume(1);
 
             wavesurferRef.current.on("ready", () => {
                 setTotalTime(wavesurferRef.current?.getDuration() || 0);
@@ -78,6 +78,16 @@ export default function AudioWavesurfer({ recording }: { recording: Recording })
         wavesurferRef.current?.playPause();
     };
 
+    const volumes = [.1, .5, 1]
+    const handleVolume = () => {
+        const newIndex = getVolumeIndex() + 1;
+        const value = volumes[newIndex < volumes.length ? newIndex : 0];
+        wavesurferRef.current?.setVolume(value);
+    }
+    const getVolumeIndex = () => {
+        return volumes.findIndex(x => x === wavesurferRef.current?.getVolume()) || 0;
+    }
+
     const handleSpeedChange = () => {
         const currentIndex = playbackRates.indexOf(audioRate);
         const nextIndex = (currentIndex + 1) % playbackRates.length;
@@ -101,6 +111,12 @@ export default function AudioWavesurfer({ recording }: { recording: Recording })
                     {isPlaying ? <BsPauseFill /> : <BsFillPlayFill />}
                 </button>
                 <div className={s.wave} ref={waveformRef} />
+                <button className={s.btn} onClick={handleVolume}>
+                    {getVolumeIndex() === 0 ? <BsFillVolumeOffFill />
+                        : getVolumeIndex() === 1 ? <BsFillVolumeDownFill />
+                            : <BsFillVolumeUpFill />
+                    }
+                </button>
             </div>
         </div>
     );
