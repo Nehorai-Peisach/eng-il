@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     description: "An easy way to learn English.",
     images: [
       {
-        url: "https://eng-il.vercel.app/og.png", // Full URL to your image
+        url: "https://eng-il.vercel.app/og.jpg", // Change to JPG format
         width: 1200,
         height: 630,
         alt: "ENG-IL - Learn English Easy",
-        type: "image/png",
+        type: "image/jpeg", // Update the type to 'image/jpeg'
       },
     ],
   },
@@ -27,9 +27,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ENG-IL - Learn English Easy",
     description: "An easy way to learn English.",
-    images: ["https://eng-il.vercel.app/og.png"],
+    images: ["https://eng-il.vercel.app/og.jpg"], // Also change here
   },
 };
+
 
 
 
