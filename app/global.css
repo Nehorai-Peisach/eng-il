@@ -1,6 +1,7 @@
 html {
     min-height: 100dvh;
     background: linear-gradient(120deg, #021f25, #28343b);
+    overflow: hidden auto;
 }
 
 body {
