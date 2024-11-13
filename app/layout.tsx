@@ -8,16 +8,31 @@ export const metadata: Metadata = {
   title: "ENG-IL",
   description: "Learn English Easy",
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://eng-il.vercel.app",
+    title: "ENG-IL - Learn English Easy",
+    description: "An easy way to learn English.",
     images: [
       {
-        url: "https://eng-il.vercel.app/og.png",
+        url: "https://eng-il.vercel.app/og.png", // Full URL to your image
         width: 1200,
         height: 630,
         alt: "ENG-IL - Learn English Easy",
+        type: "image/png",
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "ENG-IL - Learn English Easy",
+    description: "An easy way to learn English.",
+    images: ["https://eng-il.vercel.app/og.png"],
+  },
 };
+
+
+
 
 
 export default function RootLayout({
