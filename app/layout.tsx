@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://eng-il.vercel.app/og.png", // This points to your existing image
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "ENG-IL - Learn English Easy",
